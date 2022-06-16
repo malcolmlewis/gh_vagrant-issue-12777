@@ -1,0 +1,27 @@
+{
+  "ignition": {
+    "version": "3.2.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "root",
+        "passwordHash": "TMNC7npzSOOpc",
+        "sshAuthorizedKeys": [
+          "ssh-rsa ADD..YOUR..KEY..username@localhost"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/ssh/sshd_config.d/cluster.conf",
+        "mode": 416,
+        "contents": {
+          "source": "data:text/plain;charset=utf-8;base64,UGVybWl0Um9vdExvZ2luIHllcwpQYXNzd29yZEF1dGhlbnRpY2F0aW9uIHllcw=="
+        }
+      }
+    ]
+  }
+}
