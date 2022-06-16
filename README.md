@@ -5,6 +5,14 @@ This repository has been created to provide the files needed to duplicate my iss
 ### Create Ignition Iso Image
 There is a pre configured file in disk/ignition the password is opensuse but requires your ssh key for remote access.
 
+The cluster.conf file allows root login;
+
+- Mode is 0640 or 416 in decimal
+
+Contents are;
+- PermitRootLogin yes
+- PasswordAuthentication yes
+
 A new ignition file to your requirements can be created via the [Fuel Ignition Website](https://opensuse.github.io/fuel-ignition/). You need to download the config.ign file and save in the disk/ignition directory.
 
 Create the required Ignition iso image with the following command for a vagrant ignition iso image;
