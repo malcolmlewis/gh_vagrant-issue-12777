@@ -31,6 +31,8 @@ The following Vagrantfile parameters need to be set;
 
 - Set your interface name - default set to enp0s20u4
 
+- Set the full path to the ignition iso image - default set to /github/gh_vagrant-issue-12777
+
 Once you have modified the Vagrantfile and saved you can now run `vagrant up`
 
 As the version is set it will pull the "16.0.0.20220225" image which is running wicked.

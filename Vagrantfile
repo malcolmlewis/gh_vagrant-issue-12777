@@ -52,8 +52,9 @@ Vagrant.configure("2") do |config|
          node_config.vm.provider :libvirt do |libvirt|
             libvirt.cpus = "#{node[:cpu]}"
             libvirt.memory = "#{node[:ram]}"
-            # Add ignition iso to set root password, ssh key, ssh options and node-token-seed
-            libvirt.storage :file, :device => :cdrom, :path => '/data/vagrant/MicroOS3/ignition.iso'
+            # Add ignition iso to set root password, ssh key, ssh options
+            # Don't forget to set the full path to the iso image!
+            libvirt.storage :file, :device => :cdrom, :path => '/github/gh_vagrant-issue-12777/ignition.iso'
          end
 
       end
